@@ -12,17 +12,19 @@
     vr-mode-ui="enabled: false;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+    scale="1 1 1"
   >
     <!-- Display a 3D model in the scene -->
     <a-entity
       gltf-model="./dog_embedded.gltf"
-      scale="0.01 0.01 0.01" <!-- Adjust the scale as needed -->
-      position="0 0 -5" <!-- Adjust the position along the z-axis -->
-      rotation="0 180 0" <!-- Adjust the rotation to face the camera -->
+      scale="0.01 0.01 0.01"
+      position="0 0 -5"
+      rotation="0 180 0"
     ></a-entity>
 
     <!-- Static camera that moves according to the device movements -->
-    <a-entity camera></a-entity>
+    <a-entity camera position="0 1.6 0"></a-entity>
+
   </a-scene>
 </body>
 
